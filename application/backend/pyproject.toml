@@ -15,7 +15,14 @@ requires = ["uv_build>=0.13.6,<0.14.0"]
 build-backend = "uv_build"
 
 [dependency-groups]
-dev = [
-    "httpx>=0.28.1",
-    "pytest>=9.2.0",
-]
+dev = ["httpx>=0.28.1", "pytest>=9.2.0", "ruff>=0.17.4"]
+
+[tool.ruff]
+line-length = 100
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
+
+[tool.ruff.lint]
+extend-select = ["I"]

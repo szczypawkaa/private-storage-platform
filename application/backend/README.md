@@ -25,6 +25,13 @@ uv run coverage report
 uv run coverage report -m
 ```
 
+### 4. Linting and formatting
+```
+uv run ruff check --fix
+```
+```
+uv run ruff format
+```
 
 ## Tips and tricks
 
