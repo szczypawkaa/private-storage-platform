@@ -35,3 +35,9 @@ uv add lib_1 [lib_n]
 - install dependencies to virtual environment
 - to show dependency tree: `uv tree`
 - `uv remove lib_1` 
+
+### Run in container
+```
+docker build -t backend .
+docker run -d --name mycontainer -p 8080:8080 backend
+```
