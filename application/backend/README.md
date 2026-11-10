@@ -33,6 +33,7 @@ uv run coverage report -m
 uv add lib_1 [lib_n]
 ```
 - install dependencies to virtual environment
+- add to dependecy group: `uv add --dev lib_1`
 - to show dependency tree: `uv tree`
 - `uv remove lib_1` 
 
